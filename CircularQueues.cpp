@@ -3,7 +3,7 @@ using namespace std;
 
 class Queues {
     int FRONT, REAR, max = 5;
-    int queues_array[5];
+    int queue_array[5];
 
 public:
     Queues() {
@@ -35,5 +35,10 @@ public:
             else    
                 REAR = REAR +1;
         }
+        queue_array[REAR] = num;
+    }
+
+    void remove() {
+        //
     }
 };
